@@ -1,6 +1,6 @@
 class Node():
     def __init__(self, data):
-        self.data = data #self.data tem o valor de data
+        self.data = data 
         self.next = None 
 
 
@@ -9,19 +9,19 @@ class LinkedList():
         self.head = None
     
     def insertElementAtStart(self, data):
-        new_element = Node(data) #new_element é a instância de Node
+        new_element = Node(data) 
         if self.head == None:
             self.head = new_element 
             return 
         else:
-            new_element.next = self.head #new_element.next terá o valor de self.head
-            self.head = new_element #self.head terá o valor de new_element
+            new_element.next = self.head 
+            self.head = new_element 
     
     def printAllElements(self):
         startElement = self.head 
         while(startElement): 
-            print(startElement.data) #startElement só pode ter a propriedade.data devido ao new_element
-            startElement = startElement.next #
+            print(startElement.data) 
+            startElement = startElement.next 
 
     def insertElementAtEnd(self, data):
         element = Node(data)
